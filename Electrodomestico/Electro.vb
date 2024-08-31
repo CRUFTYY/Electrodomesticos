@@ -1,17 +1,18 @@
 ﻿Public Class Electro
     Private modelo As String
     Private descripcion As String
-    Private stock As String 'readonly
-    Private PrecioDeCompra As Single 'readonly
+    Private stock As Integer ' Cambiado de String a Integer
+    Private PrecioDeCompra As Single
 
+    ' Constructor
     Public Sub New(Modelo As String, descripcion As String)
         Me.modelo = Modelo
         Me.descripcion = descripcion
         Me.stock = 0
-        Me.PrecioDeCompra = 0.0F 'la F signifca que es Single 
-
+        Me.PrecioDeCompra = 0.0F
     End Sub
 
+    ' Propiedades públicas
     Public Property GetModelo() As String
         Get
             Return Me.modelo
@@ -30,13 +31,10 @@
         End Set
     End Property
 
-    Public Property GetPrecioDeCompra() As Single
+    Public ReadOnly Property GetPrecioDeCompra() As Single
         Get
-            Return Me.modelo
+            Return Me.PrecioDeCompra
         End Get
-        Set(value As Single)
-            Me.modelo = value
-        End Set
     End Property
 
     Public ReadOnly Property GetStock() As Integer
@@ -46,27 +44,22 @@
     End Property
 
 
-    Public Sub comprar(Cantidad As Integer, PrecioUnitario As Integer)
+    Public Sub Comprar(Cantidad As Integer, PrecioUnitario As Integer)
         Me.stock += Cantidad
         Me.PrecioDeCompra = PrecioUnitario
     End Sub
 
-    Public Function vender(Cantidad As Integer) As Boolean
-
-        If stock >= stock Then
-            stock -= Cantidad
+    Public Function Vender(Cantidad As Integer) As Boolean
+        If Me.stock >= Cantidad Then
+            Me.stock -= Cantidad
             Return True
         Else
-
             Return False
         End If
-
     End Function
 
     Public Function PrecioDeVenta() As Single
-        Dim PrecioDeVentaModificado As Single = Me.PrecioDeCompra * 1.2
+        Dim PrecioDeVentaModificado As Single = Me.PrecioDeCompra + (Me.PrecioDeCompra * 1.2)
         Return PrecioDeVentaModificado
     End Function
-
-
 End Class

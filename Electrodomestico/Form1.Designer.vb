@@ -47,18 +47,18 @@ Partial Class Form1
         Label6 = New Label()
         gpb_comprar = New GroupBox()
         Label12 = New Label()
-        Button1 = New Button()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
+        btn_comprar = New Button()
+        txt_PrecioDeCompra = New TextBox()
+        txt_cantidadCompra = New TextBox()
         Label10 = New Label()
         Label9 = New Label()
-        TextBox1 = New TextBox()
+        txt_stock = New TextBox()
         Label8 = New Label()
         gpb_venta = New GroupBox()
         Label13 = New Label()
-        Button2 = New Button()
-        TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
+        btn_vender = New Button()
+        txt_PrecioVenta = New TextBox()
+        txt_cantidadVenta = New TextBox()
         Label14 = New Label()
         gpb_producto.SuspendLayout()
         gpb_alta.SuspendLayout()
@@ -333,12 +333,12 @@ Partial Class Form1
         ' gpb_comprar
         ' 
         gpb_comprar.Controls.Add(Label12)
-        gpb_comprar.Controls.Add(Button1)
-        gpb_comprar.Controls.Add(TextBox3)
-        gpb_comprar.Controls.Add(TextBox2)
+        gpb_comprar.Controls.Add(btn_comprar)
+        gpb_comprar.Controls.Add(txt_PrecioDeCompra)
+        gpb_comprar.Controls.Add(txt_cantidadCompra)
         gpb_comprar.Controls.Add(Label10)
         gpb_comprar.Controls.Add(Label9)
-        gpb_comprar.Controls.Add(TextBox1)
+        gpb_comprar.Controls.Add(txt_stock)
         gpb_comprar.Controls.Add(Label8)
         gpb_comprar.Location = New Point(584, 14)
         gpb_comprar.Margin = New Padding(4, 3, 4, 3)
@@ -355,36 +355,35 @@ Partial Class Form1
         Label12.Location = New Point(7, 147)
         Label12.Margin = New Padding(4, 0, 4, 0)
         Label12.Name = "Label12"
-        Label12.Size = New Size(93, 15)
+        Label12.Size = New Size(86, 15)
         Label12.TabIndex = 13
-        Label12.Text = "Precion Compra"
+        Label12.Text = "Precio Compra"
         ' 
-        ' Button1
+        ' btn_comprar
         ' 
-        Button1.Location = New Point(100, 186)
-        Button1.Margin = New Padding(4, 3, 4, 3)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(125, 46)
-        Button1.TabIndex = 12
-        Button1.Text = "Compra"
-        Button1.UseVisualStyleBackColor = True
+        btn_comprar.Location = New Point(100, 186)
+        btn_comprar.Margin = New Padding(4, 3, 4, 3)
+        btn_comprar.Name = "btn_comprar"
+        btn_comprar.Size = New Size(125, 46)
+        btn_comprar.TabIndex = 12
+        btn_comprar.Text = "Compra"
+        btn_comprar.UseVisualStyleBackColor = True
         ' 
-        ' TextBox3
+        ' txt_PrecioDeCompra
         ' 
-        TextBox3.Location = New Point(122, 143)
-        TextBox3.Margin = New Padding(4, 3, 4, 3)
-        TextBox3.Name = "TextBox3"
-        TextBox3.ReadOnly = True
-        TextBox3.Size = New Size(82, 23)
-        TextBox3.TabIndex = 5
+        txt_PrecioDeCompra.Location = New Point(122, 143)
+        txt_PrecioDeCompra.Margin = New Padding(4, 3, 4, 3)
+        txt_PrecioDeCompra.Name = "txt_PrecioDeCompra"
+        txt_PrecioDeCompra.Size = New Size(82, 23)
+        txt_PrecioDeCompra.TabIndex = 5
         ' 
-        ' TextBox2
+        ' txt_cantidadCompra
         ' 
-        TextBox2.Location = New Point(122, 98)
-        TextBox2.Margin = New Padding(4, 3, 4, 3)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(82, 23)
-        TextBox2.TabIndex = 4
+        txt_cantidadCompra.Location = New Point(122, 98)
+        txt_cantidadCompra.Margin = New Padding(4, 3, 4, 3)
+        txt_cantidadCompra.Name = "txt_cantidadCompra"
+        txt_cantidadCompra.Size = New Size(82, 23)
+        txt_cantidadCompra.TabIndex = 4
         ' 
         ' Label10
         ' 
@@ -406,14 +405,14 @@ Partial Class Form1
         Label9.TabIndex = 2
         Label9.Text = "Unidades"
         ' 
-        ' TextBox1
+        ' txt_stock
         ' 
-        TextBox1.Location = New Point(122, 37)
-        TextBox1.Margin = New Padding(4, 3, 4, 3)
-        TextBox1.Name = "TextBox1"
-        TextBox1.ReadOnly = True
-        TextBox1.Size = New Size(82, 23)
-        TextBox1.TabIndex = 1
+        txt_stock.Location = New Point(122, 37)
+        txt_stock.Margin = New Padding(4, 3, 4, 3)
+        txt_stock.Name = "txt_stock"
+        txt_stock.ReadOnly = True
+        txt_stock.Size = New Size(82, 23)
+        txt_stock.TabIndex = 1
         ' 
         ' Label8
         ' 
@@ -428,9 +427,9 @@ Partial Class Form1
         ' gpb_venta
         ' 
         gpb_venta.Controls.Add(Label13)
-        gpb_venta.Controls.Add(Button2)
-        gpb_venta.Controls.Add(TextBox4)
-        gpb_venta.Controls.Add(TextBox5)
+        gpb_venta.Controls.Add(btn_vender)
+        gpb_venta.Controls.Add(txt_PrecioVenta)
+        gpb_venta.Controls.Add(txt_cantidadVenta)
         gpb_venta.Controls.Add(Label14)
         gpb_venta.Location = New Point(584, 260)
         gpb_venta.Margin = New Padding(4, 3, 4, 3)
@@ -447,36 +446,36 @@ Partial Class Form1
         Label13.Location = New Point(16, 88)
         Label13.Margin = New Padding(4, 0, 4, 0)
         Label13.Name = "Label13"
-        Label13.Size = New Size(93, 15)
+        Label13.Size = New Size(72, 15)
         Label13.TabIndex = 18
-        Label13.Text = "Precion Compra"
+        Label13.Text = "Precio Venta"
         ' 
-        ' Button2
+        ' btn_vender
         ' 
-        Button2.Location = New Point(93, 157)
-        Button2.Margin = New Padding(4, 3, 4, 3)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(125, 46)
-        Button2.TabIndex = 17
-        Button2.Text = "Vender"
-        Button2.UseVisualStyleBackColor = True
+        btn_vender.Location = New Point(93, 157)
+        btn_vender.Margin = New Padding(4, 3, 4, 3)
+        btn_vender.Name = "btn_vender"
+        btn_vender.Size = New Size(125, 46)
+        btn_vender.TabIndex = 17
+        btn_vender.Text = "Vender"
+        btn_vender.UseVisualStyleBackColor = True
         ' 
-        ' TextBox4
+        ' txt_PrecioVenta
         ' 
-        TextBox4.Location = New Point(120, 88)
-        TextBox4.Margin = New Padding(4, 3, 4, 3)
-        TextBox4.Name = "TextBox4"
-        TextBox4.ReadOnly = True
-        TextBox4.Size = New Size(82, 23)
-        TextBox4.TabIndex = 16
+        txt_PrecioVenta.Location = New Point(120, 88)
+        txt_PrecioVenta.Margin = New Padding(4, 3, 4, 3)
+        txt_PrecioVenta.Name = "txt_PrecioVenta"
+        txt_PrecioVenta.ReadOnly = True
+        txt_PrecioVenta.Size = New Size(82, 23)
+        txt_PrecioVenta.TabIndex = 16
         ' 
-        ' TextBox5
+        ' txt_cantidadVenta
         ' 
-        TextBox5.Location = New Point(120, 43)
-        TextBox5.Margin = New Padding(4, 3, 4, 3)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(82, 23)
-        TextBox5.TabIndex = 15
+        txt_cantidadVenta.Location = New Point(120, 43)
+        txt_cantidadVenta.Margin = New Padding(4, 3, 4, 3)
+        txt_cantidadVenta.Name = "txt_cantidadVenta"
+        txt_cantidadVenta.Size = New Size(82, 23)
+        txt_cantidadVenta.TabIndex = 15
         ' 
         ' Label14
         ' 
@@ -535,17 +534,17 @@ Partial Class Form1
     Friend WithEvents gpb_comprar As GroupBox
     Friend WithEvents gpb_venta As GroupBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents btn_comprar As Button
+    Friend WithEvents txt_PrecioDeCompra As TextBox
+    Friend WithEvents txt_cantidadCompra As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_stock As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents btn_vender As Button
+    Friend WithEvents txt_PrecioVenta As TextBox
+    Friend WithEvents txt_cantidadVenta As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents rb_SinFreezer As RadioButton
     Friend WithEvents rb_Freezer As RadioButton
