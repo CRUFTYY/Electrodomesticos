@@ -111,8 +111,6 @@
     End Sub
 
 
-
-
     Private Sub ActivarAlta()
         If Not (String.IsNullOrEmpty(txt_modelo.Text) And Not String.IsNullOrEmpty(txt_descripcion.Text)) And (rb_CargaFrontal.Checked Or rb_heladera.Checked Or rb_lavarropas.Checked Or rb_otro.Checked) Then
             If rb_heladera.Checked Then
