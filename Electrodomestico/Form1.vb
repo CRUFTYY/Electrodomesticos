@@ -215,6 +215,7 @@
 
     End Sub
 
+
     Private Sub txt_PrecioVenta_TextChanged(sender As Object, e As EventArgs) Handles txt_PrecioVenta.TextChanged
         Dim cantidad As Integer = txt_cantidadCompra.Text
         Dim precioUnitario As Single = txt_PrecioDeCompra.Text
